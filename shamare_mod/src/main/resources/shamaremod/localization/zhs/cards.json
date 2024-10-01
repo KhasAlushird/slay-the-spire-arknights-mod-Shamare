@@ -1,0 +1,408 @@
+{
+    "ShamareKhas:Strike": { 
+      "NAME": "打击", 
+      "DESCRIPTION": "造成 !D! 点伤害。", 
+      "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。" 
+    },
+
+    "ShamareKhas:Defend": { 
+      "NAME": "防御", 
+      "DESCRIPTION": "获得 !B! 点格挡。", 
+      "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。" 
+    },
+    "ShamareKhas:PoisonShot": { 
+      "NAME": "剧毒射击", 
+      "DESCRIPTION": "造成 !D! 点伤害，施加 !M! 层 shamarekhas:巫术中毒 。", 
+      "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，施加 !M! 层 shamarekhas:巫术中毒 。" 
+    },
+    "ShamareKhas:CurseStrike": { 
+      "NAME": "诅咒打击", 
+      "DESCRIPTION": "造成 !D! 点伤害，施加 !M! 层 shamarekhas:巫术易伤 。", 
+      "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，施加 !M! 层 shamarekhas:巫术易伤 。" 
+    },
+    "ShamareKhas:Shadow": { 
+        "NAME": "虚影", 
+        "DESCRIPTION": "获得 !B! 点格挡，施加 !M! 层 shamarekhas:巫术虚弱 。", 
+        "UPGRADE_DESCRIPTION": "获得 !B! 点格挡，施加 !M! 层 shamarekhas:巫术虚弱 。" 
+      },
+      "ShamareKhas:PoisonDisaster": { 
+        "NAME": "猛毒灾祸", 
+        "DESCRIPTION": "不能被打出, 虚无 NL 抽到时，随机对一名敌人给予 !M! 层 中毒 ，并使本场战斗中的 *猛毒灾祸 数值+1", 
+        "UPGRADE_DESCRIPTION": "不能被打出 NL *虚无 NL 回合结束时，随机对一名敌人给予 !M! 层 中毒 ，并使本场战斗中的 *猛毒灾祸 增强。" 
+      },
+      "ShamareKhas:FireDisaster": { 
+        "NAME": "烈焰灾祸", 
+        "DESCRIPTION": "不能被打出, 虚无 NL 抽到时，对所有敌人造成 !M! 点伤害，并使本场战斗中的 *烈焰灾祸 数值+6", 
+        "UPGRADE_DESCRIPTION": "不能被打出 NL *虚无 NL 回合结束时，随机对一名敌人给予 !M! 层 中毒 ，并使本场战斗中的 *猛毒灾祸 增强。" 
+      },
+      "ShamareKhas:ShadowDisaster": { 
+        "NAME": "邪影灾祸", 
+        "DESCRIPTION": "不能被打出, 虚无 NL 抽到时，随机让一名有攻击意图的敌人在本回合内失去 !M! 点力量，并使本场战斗中的 *虚影灾祸 数值+3", 
+        "UPGRADE_DESCRIPTION": "不能被打出 NL *虚无 NL 回合结束时，随机对一名敌人给予 !M! 层 中毒 ，并使本场战斗中的 *猛毒灾祸 增强。" 
+      },
+      "ShamareKhas:HolyDisaster": { 
+        "NAME": "神圣灾祸", 
+        "DESCRIPTION": "不能被打出, 虚无 NL 抽到时，抽 !M! 张牌，获得 !M! 层再生，将 *每种灾祸 置入你的弃牌堆，并使本场战斗中的 *神圣灾祸 数值+1", 
+        "UPGRADE_DESCRIPTION": "不能被打出 NL *虚无 NL 回合结束时，随机对一名敌人给予 !M! 层 中毒 ，并使本场战斗中的 *猛毒灾祸 增强。" 
+      },
+      "ShamareKhas:PoisonSeed": { 
+        "NAME": "剧毒之种", 
+        "DESCRIPTION": "抽1张牌，将 !M! 张 shamarekhas:猛毒灾祸 置入你的弃牌堆", 
+        "UPGRADE_DESCRIPTION": "抽2张牌，将 !M! 张 shamarekhas:猛毒灾祸 置入你的弃牌堆" 
+      },
+      "ShamareKhas:ArousingFlame": { 
+        "NAME": "鼓动火焰", 
+        "DESCRIPTION": "造成 !D! 点伤害,将 !M! 张 shamarekhas:烈焰灾祸 和 *灼烧+ 置入你的抽牌堆", 
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害,将 !M! 张 shamarekhas:烈焰灾祸 和 *灼烧 置入你的抽牌堆" 
+      },
+      "ShamareKhas:ShadowStep": { 
+        "NAME": "暗影步", 
+        "DESCRIPTION": "获得 !B! 点格挡。将 !M! 张 shamarekhas:邪影灾祸 置入你的抽牌堆 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。将 !M! 张 shamarekhas:邪影灾祸 置入你的抽牌堆 NL 消耗 " 
+      },
+      "ShamareKhas:FinalVoodoo": { 
+        "NAME": "终极巫毒", 
+        "DESCRIPTION": "将1张 shamarekhas:神圣灾祸 置入你的抽牌堆，获得 !M! 点 shamarekhas:报应 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "将1张 shamarekhas:神圣灾祸 置入你的抽牌堆，获得 !M! 点 shamarekhas:报应 NL 消耗 " 
+      },
+      "ShamareKhas:SacrificialStab": { 
+        "NAME": "献祭刺击", 
+        "DESCRIPTION": "造成 !D! 点伤害，获得 !B! 点格挡，获得 !M! 点 shamarekhas:报应 ", 
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，获得 !B! 点格挡，获得 !M! 点 shamarekhas:报应 " 
+      },
+      "ShamareKhas:Mercy": { 
+        "NAME": "怜悯", 
+        "DESCRIPTION": "移除所有 shamarekhas:报应 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "移除所有 shamarekhas:报应 NL 消耗 " 
+      },
+      "ShamareKhas:DarkAttack": { 
+        "NAME": "幽影突袭", 
+        "DESCRIPTION": "造成 !D! 点伤害，弃 !M! 张牌。如果弃掉了 诅咒 或 *状态 牌，获得 [E] 且抽1张牌", 
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，弃 !M! 张牌。如果弃掉了 诅咒 或 *状态 牌，获得 [E] 且抽1张牌" 
+      },
+      "ShamareKhas:BloodCeremony": { 
+        "NAME": "滴血仪式", 
+        "DESCRIPTION": "抽 !M! 张牌，将你的 shamarekhas:报应 翻倍，获得4点 shamarekhas:报应 ", 
+        "UPGRADE_DESCRIPTION": "抽 !M! 张牌，将你的 shamarekhas:报应 翻倍，获得4点 shamarekhas:报应 " 
+      },
+      "ShamareKhas:WitherStrike": { 
+        "NAME": "凋零打击", 
+        "DESCRIPTION": "造成 !D! 点伤害。如果没有杀死目标，则对自己施加 !M! 点 shamarekhas:报应 ", 
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。如果没有杀死目标，则对自己施加 !M! 点 shamarekhas:报应 " 
+      },
+      "ShamareKhas:SoulWell": { 
+        "NAME": "心灵之井", 
+        "DESCRIPTION": " 虚无 NL 获得 !B! 点格挡。额外获得相当于 shamarekhas:报应 层数的格挡。", 
+        "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。额外获得相当于 shamarekhas:报应 层数的格挡。" 
+      },
+      "ShamareKhas:SoulScorch": { 
+        "NAME": "精神灼烧", 
+        "DESCRIPTION": " 虚无 NL 消耗 一张手牌，抽 !M! 张牌 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": " 虚无 NL 消耗 一张手牌，抽 !M! 张牌 NL 消耗 " 
+      },
+      "ShamareKhas:SoulSiphon": { 
+        "NAME": "灵魂虹吸", 
+        "DESCRIPTION": "造成 !D! 点伤害，回复9点生命值，获得 !M! 点 shamarekhas:报应 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，回复9点生命值，获得 !M! 点 shamarekhas:报应 NL 消耗 " 
+      },
+
+      "ShamareKhas:Salvation": { 
+        "NAME": "救赎", 
+        "DESCRIPTION": "获得 !M! 点 shamarekhas:宽恕 ,每回合开始时失去一点 [E] ", 
+        "UPGRADE_DESCRIPTION": "获得 !M! 点 shamarekhas:宽恕 ,每回合开始时失去一点 [E] "
+      },
+      "ShamareKhas:NecromanticPoison": { 
+        "NAME": "死灵毒药", 
+        "DESCRIPTION": "给予 3 层 中毒 ，如果已经有 中毒 ，再额外施加 !M! 层 shamarekhas:巫术中毒 ", 
+        "UPGRADE_DESCRIPTION": "给予 3 层 中毒 ，如果已经有 中毒 ，再额外施加 !M! 层 shamarekhas:巫术中毒 "
+      },
+      "ShamareKhas:PeaceAltar": { 
+        "NAME": "安魂祭坛", 
+        "DESCRIPTION": "每当你触发 shamarekhas:报应 时，抽2张牌，获得 [E] [E] ", 
+        "UPGRADE_DESCRIPTION": "每当你触发 shamarekhas:报应 时，抽2张牌，获得 [E] [E] "
+      },
+      "ShamareKhas:ViolentPleasure": { 
+        "NAME": "暴力的欢愉", 
+        "DESCRIPTION": "给予自身 !M! 层 虚弱 。造成 !D! 点伤害，给予2层 shamarekhas:巫术易伤 ", 
+        "UPGRADE_DESCRIPTION": "给予自身 !M! 层 虚弱 。造成 !D! 点伤害，给予2层 shamarekhas:巫术易伤 "
+      },
+      "ShamareKhas:BrokenImage": { 
+        "NAME": "破碎映像", 
+        "DESCRIPTION": "给予自身 !M! 层 脆弱 。获得 !B! 点格挡。", 
+        "UPGRADE_DESCRIPTION": "给予自身 !M! 层 脆弱 。获得 !B! 点格挡。"
+      },
+
+      "ShamareKhas:FireHeart": { 
+        "NAME": "灼燃之心", 
+        "DESCRIPTION": " 消耗 X张牌，回复X点生命值并将X张 shamarekhas:烈焰灾祸 置入你的抽牌堆 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": " 消耗 X+1张牌，回复X+1点生命值并将X+1张 shamarekhas:烈焰灾祸 置入你的抽牌堆 NL 消耗 "
+      },
+      "ShamareKhas:NightScentedTea": { 
+        "NAME": "夜影花茶", 
+        "DESCRIPTION": "获得 !B! 点格挡,弃 !M! 张牌。如果弃掉了 诅咒 或 *状态 牌，将一张 shamarekhas:邪影灾祸 置入你的抽牌堆并抽1张牌", 
+        "UPGRADE_DESCRIPTION": "获得 !B! 点格挡,弃 !M! 张牌。如果弃掉了 诅咒 或 *状态 牌，将一张 shamarekhas:邪影灾祸 置入你的抽牌堆并抽1张牌"
+      },
+      "ShamareKhas:InsultToInjury": { 
+        "NAME": "雪上加霜", 
+        "DESCRIPTION": "造成 !D! 点伤害，如果目标拥有负面效果，则额外施加 !M! 层 shamarekhas:巫术虚弱 ", 
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，如果目标拥有负面效果，则额外施加 !M! 层 shamarekhas:巫术虚弱 "
+      },
+      "ShamareKhas:DarkAffine": { 
+        "NAME": "黑暗亲和", 
+        "DESCRIPTION": "获得 !B! 点格挡，你每拥有4点 shamarekhas:报应 ,此牌耗能减少 [E] ", 
+        "UPGRADE_DESCRIPTION": "获得 !B! 点格挡，你每拥有4点 shamarekhas:报应 ,此牌耗能减少 [E] "
+      },
+      "ShamareKhas:FireWaltz": { 
+        "NAME": "烈焰华尔兹", 
+        "DESCRIPTION": "弃掉你的所有手牌，抽牌直到将手牌抽满，将 !M! 张 *灼烧 置入你的抽牌堆 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "弃掉你的所有手牌，抽牌直到将手牌抽满，将 !M! 张 *灼烧 置入你的抽牌堆 NL 消耗 "
+      },
+      "ShamareKhas:CalamityGrasp": { 
+        "NAME": "灾难之握", 
+        "DESCRIPTION": "对自身施加 !M! 层 shamarekhas:报应 。每当你抽到一张 *灾祸 牌时，抽1张牌。", 
+        "UPGRADE_DESCRIPTION": "对自身施加 !M! 层 shamarekhas:报应 。每当你抽到一张 *灾祸 牌时，抽1张牌。"
+      },
+
+      "ShamareKhas:BlackBile": { 
+        "NAME": "黑胆汁", 
+        "DESCRIPTION": " 不能被打出 NL 在你的回合结束时，获得3层 shamarekhas:报应 ", 
+        "UPGRADE_DESCRIPTION": "对自身施加 !M! 层 shamarekhas:报应 。每当你抽到一张 *灾祸 牌时，抽1张牌。"
+      },
+      "ShamareKhas:FallenBlood": { 
+        "NAME": "堕落之血", 
+        "DESCRIPTION": " 不能被打出, 虚无 NL 抽到时，抽1张牌，获得3层 shamarekhas:报应 ，对一名随机敌人施加12层 shamarekhas:报应 ，将此牌的2张复制置入你的弃牌堆 ", 
+        "UPGRADE_DESCRIPTION": "对自身施加 !M! 层 shamarekhas:报应 。每当你抽到一张 *灾祸 牌时，抽1张牌。"
+      },
+      "ShamareKhas:RedForm": { 
+        "NAME": "猩红之力", 
+        "DESCRIPTION": "获得 !M! 层 shamarekhas:报应 ,从3张红色非攻击牌中选择1张加入你的手牌,其本回合耗能变为0 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "获得 !M! 层 shamarekhas:报应 ,从3张红色非攻击牌中选择1张加入你的手牌,其本回合耗能变为0 NL 消耗 "
+      },
+      "ShamareKhas:BodyFluidReconcile": { 
+        "NAME": "体液调和", 
+        "DESCRIPTION": "造成 !D! 点伤害4次，抽 !M! 张牌，将1张 shamarekhas:黑胆汁 置入你的抽牌堆", 
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害4次，抽 !M! 张牌，将1张 shamarekhas:黑胆汁 置入你的抽牌堆"
+      },
+      "ShamareKhas:IncurableDisease": { 
+        "NAME": "病入膏肓", 
+        "DESCRIPTION": " 虚无 NL 选择1张 *灾祸 牌，将其2张复制加入你的抽牌堆顶部，抽 !M! 张牌 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "选择1张 *灾祸 牌，将其2张复制加入你的抽牌堆顶部，抽 !M! 张牌 NL 消耗 "
+      },
+      "ShamareKhas:SuperNatural": { 
+        "NAME": "超自然", 
+        "DESCRIPTION": "随机对敌人造成 !D! 点伤害 !M! 次。如果你的手牌中有 诅咒 或 *状态 牌，你的 shamarekhas:报应 减半", 
+        "UPGRADE_DESCRIPTION": "随机对敌人造成 !D! 点伤害 !M! 次。如果你的手牌中有 诅咒 或 *状态 牌，你的 shamarekhas:报应 减半"
+      },
+      "ShamareKhas:Necrocytosis": { 
+        "NAME": "细胞坏死", 
+        "DESCRIPTION": "随机给予一名敌人 !M! 层 shamarekhas:巫术中毒 。如果你没有负面效果，随机将一张 诅咒 置入你的抽牌堆", 
+        "UPGRADE_DESCRIPTION": "随机给予一名敌人 !M! 层 shamarekhas:巫术中毒 。如果你没有负面效果，随机将一张 诅咒 置入你的抽牌堆"
+      },
+      "ShamareKhas:ChoirOfPain": { 
+        "NAME": "痛苦合唱团", 
+        "DESCRIPTION": "对所有敌人造成 !D! 点伤害。每对一个敌人生效，将一张 shamarekhas:黑胆汁 置入你的手牌", 
+        "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。每对一个敌人生效，将一张 shamarekhas:黑胆汁 置入你的手牌"
+      },
+      "ShamareKhas:HirudoTherapy": { 
+        "NAME": "水蛭疗法", 
+        "DESCRIPTION": "每当有一张牌被 消耗 ，回复 !M! 点生命，获得 !M! 点 shamarekhas:报应 。", 
+        "UPGRADE_DESCRIPTION": "每当有一张牌被 消耗 ，回复 !M! 点生命，获得 !M! 点 shamarekhas:报应 。"
+      },
+      "ShamareKhas:EvilBoding": { 
+        "NAME": "伴生恶兆", 
+        "DESCRIPTION": "你每有1点 shamarekhas:报应 ,对一名敌人施加同样的 shamarekhas:报应 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "你每有1点 shamarekhas:报应 ,对一名敌人施加同样的 shamarekhas:报应 NL 消耗 "
+      },
+      "ShamareKhas:SinOutbreak": { 
+        "NAME": "罪业爆发", 
+        "DESCRIPTION": "获得 !M! 层 shamarekhas:报应 ,清除目标身上所有负面效果。每清除一种，造成 !D! 伤害 NL 消耗", 
+        "UPGRADE_DESCRIPTION": "获得 !M! 层 shamarekhas:报应 ,清除目标和自身身上所有负面效果。每清除一种，造成 !D! 伤害 NL 消耗"
+      },
+      "ShamareKhas:Betrayal": { 
+        "NAME": "背叛", 
+        "DESCRIPTION": "选择一个敌人，对所有敌人造成相当于其攻击力的伤害", 
+        "UPGRADE_DESCRIPTION": "选择一个敌人，对所有敌人造成相当于其攻击力+ !M! 的伤害"
+      },
+      "ShamareKhas:BloodBloom": { 
+        "NAME": "血色绽放", 
+        "DESCRIPTION": "触发你的 shamarekhas:报应 ，获得 [E] [E] ", 
+        "UPGRADE_DESCRIPTION": "触发你的 shamarekhas:报应 ，获得 [E] [E] [E] "
+      },
+      "ShamareKhas:ScarletTide": { 
+        "NAME": "猩红浪潮", 
+        "DESCRIPTION": "造成 !D! 点伤害，抽 3 张牌，弃3张牌，将 !M! 张 shamarekhas:黑胆汁 置入你的手牌", 
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，抽 3 张牌，弃3张牌，将 !M! 张 shamarekhas:黑胆汁 置入你的手牌"
+      },
+      "ShamareKhas:OmenOfDefeat": { 
+        "NAME": "溃败暗示", 
+        "DESCRIPTION": "随机 消耗 手牌中的1张 诅咒 或 *状态 牌，抽 !M! 张牌。反之，将1张 shamarekhas:黑胆汁 置入你的手牌", 
+        "UPGRADE_DESCRIPTION": "随机 消耗 手牌中的1张 诅咒 或 *状态 牌，抽 !M! 张牌。反之，将1张 shamarekhas:黑胆汁 置入你的手牌"
+      },
+      "ShamareKhas:PlagueScholar": { 
+        "NAME": "瘟疫学者", 
+        "DESCRIPTION": "每回合结束时，将1张 shamarekhas:猛毒灾祸 置入你的弃牌堆", 
+        "UPGRADE_DESCRIPTION": " 固有 NL 每回合结束时，将1张 shamarekhas:猛毒灾祸 置入你的弃牌堆"
+      },
+      "ShamareKhas:SuspiciousApple": { 
+        "NAME": "可疑的苹果", 
+        "DESCRIPTION": " 虚无 , 消耗 NL 为一个目标恢复 !M! 生命值，对其施加 1 层 易伤 ，回合结束时对自己施加相同效果", 
+        "UPGRADE_DESCRIPTION": " 虚无 , 消耗 NL 为一个目标恢复 !M! 生命值，对其施加 1 层 易伤 ，回合结束时对自己施加相同效果"
+      },
+      "ShamareKhas:EdgeRunner": { 
+        "NAME": "边缘行者", 
+        "DESCRIPTION": "每回合结束时，将一张 shamarekhas:堕落之血 置入你的弃牌堆", 
+        "UPGRADE_DESCRIPTION": " 保留 NL 每回合结束时，将一张 shamarekhas:堕落之血 置入你的弃牌堆"
+      },
+      "ShamareKhas:PoisonBarrier": { 
+        "NAME": "淬毒屏障", 
+        "DESCRIPTION": "获得 !B! 点格挡，你在这个回合每受到一次攻击，都对攻击者施加 !M! 层 中毒 。", 
+        "UPGRADE_DESCRIPTION": "获得 !B! 点格挡，你在这个回合每受到一次攻击，都对攻击者施加 !M! 层 中毒 。"
+      },
+      "ShamareKhas:NoxiousFlow": { 
+        "NAME": "烈毒涌动", 
+        "DESCRIPTION": "将 !M! 张 shamarekhas:猛毒灾祸 置入你的抽牌堆，对所有敌人施加 !M! 层 shamarekhas:巫术中毒 。如果你有负面效果，获得 [E] [E] [E] NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "将 !M! 张 shamarekhas:猛毒灾祸 置入你的抽牌堆，对所有敌人施加 !M! 层 shamarekhas:巫术中毒 。如果你有负面效果，获得 [E] [E] [E] NL 消耗 "
+      },
+      "ShamareKhas:DimBud": { 
+        "NAME": "幽暗花蕊", 
+        "DESCRIPTION": "每当你受到 *未被格挡的伤害 ，将1张 shamarekhas:邪影灾祸 置入你的抽牌堆", 
+        "UPGRADE_DESCRIPTION": "每当你受到 *未被格挡的伤害 ，将1张 shamarekhas:邪影灾祸 置入你的抽牌堆"
+      },
+      "ShamareKhas:ThoughtSteal": { 
+        "NAME": "思维窃取", 
+        "DESCRIPTION": "选择一个敌人，根据它的意图选择 shamarekhas:最优的效果 ", 
+        "UPGRADE_DESCRIPTION": "选择一个敌人，根据它的意图选择 shamarekhas:最优的效果 "
+      },
+      "ShamareKhas:ForbiddenWords": { 
+        "NAME": "禁忌咒文", 
+        "DESCRIPTION": "造成 !D! 点伤害，并对目标施加一种随机的负面效果", 
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，并对目标施加一种随机的负面效果"
+      },
+      "ShamareKhas:Hospitable": { 
+        "NAME": "殷勤", 
+        "DESCRIPTION": "造成 !D! 点伤害,获得 !B! 点格挡，将1张 shamarekhas:可疑的苹果 置入你的抽牌堆 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，获得 !B! 点格挡，将1张 shamarekhas:可疑的苹果 置入你的抽牌堆 NL 消耗 "
+      },
+      "ShamareKhas:CursedNova": { 
+        "NAME": "咒焰新星", 
+        "DESCRIPTION": "对所有敌人造成 !D! 点伤害，将 !M! 张 shamarekhas:烈焰灾祸 置入你的抽牌堆", 
+        "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害，将 !M! 张 shamarekhas:烈焰灾祸 置入你的抽牌堆"
+      },
+      "ShamareKhas:FireThornblade": { 
+        "NAME": "火棘匕首", 
+        "DESCRIPTION": "造成 !D! 点伤害，流失3点生命值，获得 !M! 层 荆棘 ，将1张 shamarekhas:烈焰灾祸 置入你的抽牌堆, 消耗 ", 
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，流失3点生命值，获得 !M! 层 荆棘 ，将1张 shamarekhas:烈焰灾祸 置入你的抽牌堆, 消耗 "
+      },
+      "ShamareKhas:Defile": { 
+        "NAME": "亵渎", 
+        "DESCRIPTION": "获得 !M! 点 shamarekhas:报应 ，回合开始时，随机对一名敌人施加1种 shamarekhas:巫术效果 ", 
+        "UPGRADE_DESCRIPTION": "获得 !M! 点 shamarekhas:报应 ，回合开始时，随机对一名敌人施加1种 shamarekhas:巫术效果 "
+      },
+      "ShamareKhas:Aruspicy": { 
+        "NAME": "卜问之术", 
+        "DESCRIPTION": "获得 !M! 点 shamarekhas:报应 ，回合开始时，抽1张牌， 预见 2 ", 
+        "UPGRADE_DESCRIPTION": "获得 !M! 点 shamarekhas:报应 ，回合开始时，抽1张牌， 预见 2 "
+      },
+      "ShamareKhas:Surgery": { 
+        "NAME": "外科手术", 
+        "DESCRIPTION": "造成 !D! 点伤害。如果造成了 *未被格挡的伤害 ，施加 !M! 点 shamarekhas:报应 ", 
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。如果造成了 *未被格挡的伤害 ，施加 !M! 点 shamarekhas:报应 "
+      },
+      "ShamareKhas:TheFool": { 
+        "NAME": "愚者", 
+        "DESCRIPTION": "每回合开始时，最多弃掉2张牌，每弃掉1张 *灾祸 牌，获得 [E] 并抽2张牌", 
+        "UPGRADE_DESCRIPTION": "每回合开始时，最多弃掉2张牌，每弃掉1张 *灾祸 牌，获得 [E] 并抽2张牌"
+      },
+      "ShamareKhas:WitchBrew": { 
+        "NAME": "女巫佳酿", 
+        "DESCRIPTION": "造成 !D! 点伤害，若 斩杀 ，战斗结束时随机额外获得一瓶罕见药水和7金币 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，若 斩杀 ，战斗结束时随机额外获得一瓶罕见药水和7金币 NL 消耗 "
+      },
+      "ShamareKhas:InferiorReagent": { 
+        "NAME": "劣质试剂", 
+        "DESCRIPTION": "施加 !M! 点 shamarekhas:巫术虚弱 ，这张牌每被打出一次，在本场战斗中其耗能增加1。", 
+        "UPGRADE_DESCRIPTION": "施加 !M! 点 shamarekhas:巫术虚弱 ，这张牌每被打出一次，在本场战斗中其耗能增加1。"
+      },
+      "ShamareKhas:DepartedEcho": { 
+        "NAME": "亡者回响", 
+        "DESCRIPTION": "造成 !D! 点伤害 并 施加1层 shamarekhas:巫术易伤 X次", 
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 并 施加1层 shamarekhas:巫术易伤 X次"
+      },
+      "ShamareKhas:Deal": { 
+        "NAME": "交易", 
+        "DESCRIPTION": "获得 !M! 点 shamarekhas:报应 ，获得3点 力量 和1点 敏捷 ", 
+        "UPGRADE_DESCRIPTION": "获得 !M! 点 shamarekhas:报应 ，获得3点 力量 和2点 敏捷 "
+      },
+      "ShamareKhas:ConcentratedSulfuricAcid": { 
+        "NAME": "浓硫酸", 
+        "DESCRIPTION": "去除一名敌人的所有 格挡 值及其 人工制品 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "去除一名敌人的所有 格挡 值及其 人工制品 NL 消耗 "
+      },
+      "ShamareKhas:SerialDisaster": { 
+        "NAME": "连环灾难", 
+        "DESCRIPTION": "对所有敌人造成 !D! 点伤害2次。每造成1次 *未被格挡的伤害 ，将一张 *灾祸 牌 置入你的弃牌堆, 消耗 ", 
+        "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害2次。每造成1次 *未被格挡的伤害 ，将一张 *灾祸 牌 置入你的弃牌堆, 消耗 "
+      },
+      "ShamareKhas:BlazeFurnace": { 
+        "NAME": "火光洪炉", 
+        "DESCRIPTION": "抽3张牌。只有在手牌数小于等于 !M! 的时候才能打出(不计算 *火光洪炉 及 诅咒 ， *状态 牌)", 
+        "UPGRADE_DESCRIPTION": "抽3张牌。只有在手牌数小于等于 !M! 的时候才能打出(不计算 *火光洪炉 及 诅咒 ， *状态 牌)"
+      },
+      "ShamareKhas:DrinkingPoisonToQuenchThirst": { 
+        "NAME": "饮鸠止渴", 
+        "DESCRIPTION": "获得 !B! 点格挡，3回合后，获得 !M! 点 shamarekhas:报应 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "获得 !B! 点格挡，3回合后，获得 !M! 点 shamarekhas:报应 NL 消耗 "
+      },
+      "ShamareKhas:NightmareGaze": { 
+        "NAME": "噩梦凝视", 
+        "DESCRIPTION": "获得 !M! 点 shamarekhas:报应 ,造成 !D! 点伤害， shamarekhas:绝望之触 (40):额外触发2次效果, 消耗 ", 
+        "UPGRADE_DESCRIPTION": "获得 !M! 点 shamarekhas:报应 ,造成 !D! 点伤害， shamarekhas:绝望之触 (40):额外触发2次效果, 消耗 "
+      },
+      "ShamareKhas:TortureTreatment": { 
+        "NAME": "折磨疗法", 
+        "DESCRIPTION": " 虚无 NL 获得 !M! 点 shamarekhas:报应 ，恢复7点生命值， shamarekhas:绝望之触 (20):额外触发2次效果, 消耗 ", 
+        "UPGRADE_DESCRIPTION": " 虚无 NL 获得 !M! 点 shamarekhas:报应 ，恢复7点生命值, shamarekhas:绝望之触 (20):额外触发2次效果, 消耗 "
+      },
+      "ShamareKhas:AmuletOfUndying": { 
+        "NAME": "不朽护符", 
+        "DESCRIPTION": "获得 !B! 点格挡， shamarekhas:绝望之触 (30):额外获得2点 shamarekhas:缓冲 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "获得 !B! 点格挡， shamarekhas:绝望之触 (30):额外获得2点 shamarekhas:缓冲 NL 消耗 "
+      },
+      "ShamareKhas:DoomsdayProphecy": { 
+        "NAME": "末日预言", 
+        "DESCRIPTION": "获得 [E] , shamarekhas:绝望之触 (50):随机将3张 *灾祸 牌 置入你的抽牌堆, 消耗 ", 
+        "UPGRADE_DESCRIPTION": "获得 [E] ,抽1张牌, shamarekhas:绝望之触 (50):随机将3张 *灾祸 牌 置入你的抽牌堆, 消耗 "
+      },
+      "ShamareKhas:Whisper": { 
+        "NAME": "低语", 
+        "DESCRIPTION": "使所有敌人力量- !M! NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "使所有敌人力量- !M! NL 消耗 "
+      },
+      "ShamareKhas:Dressmaker": { 
+        "NAME": "裁缝", 
+        "DESCRIPTION": "造成 !D! 点伤害4次。 shamarekhas:绝望之触 (45):你的下 !M! 张攻击牌耗能为0 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害4次。 shamarekhas:绝望之触 (45):你的下 !M! 张攻击牌耗能为0 NL 消耗 "
+      },
+      "ShamareKhas:SorceryStrike": { 
+        "NAME": "巫术打击", 
+        "DESCRIPTION": "造成 !D! 点伤害，抽 !M! 张牌，施加 !M! 层 shamarekhas:巫术易伤 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，抽 !M! 张牌，施加 !M! 层 shamarekhas:巫术易伤 NL 消耗 "
+      },
+      "ShamareKhas:SorceryDefend": { 
+        "NAME": "巫术防御", 
+        "DESCRIPTION": "获得 !B! 点格挡，抽 !M! 张牌，施加 !M! 层 shamarekhas:巫术虚弱 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "获得 !B! 点格挡，抽 !M! 张牌，施加 !M! 层 shamarekhas:巫术虚弱 NL 消耗 "
+      },
+      "ShamareKhas:CursedApparition": { 
+        "NAME": "被诅咒的灵体", 
+        "DESCRIPTION": " 虚无 NL 获得2层 易伤 和1层 无实体 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "获得2层 易伤 和1层 无实体 NL 消耗 "
+      }
+      
+      
+
+
+
+
+
+  }
