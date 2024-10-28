@@ -19,7 +19,7 @@ public class EdgeRunner extends CustomCard {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID); // 从游戏系统读取本地化资源
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH =ImageHelper.getCardImgPath(CardType.POWER, "EdgeRunner");
-    private static final int COST = 0;
+    private static final int COST = 1;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = Shamare.PlayerColorEnum.SHAMARE_COLOR;
@@ -37,7 +37,7 @@ public class EdgeRunner extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.selfRetain = true;
+            this.upgradeBaseCost(0);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

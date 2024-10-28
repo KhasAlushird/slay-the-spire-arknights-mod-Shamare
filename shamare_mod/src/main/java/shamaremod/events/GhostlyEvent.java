@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.Omamori;
+import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 
 import shamaremod.helpers.IdHelper;
@@ -38,6 +39,19 @@ public class GhostlyEvent extends AbstractImageEvent {
             this.imageEventText.setDialogOption(OPTIONS[1],new Normality()); // 添加1张凡庸和3张升级过后的灵体
         }
         this.imageEventText.setDialogOption(OPTIONS[2]); // 什么都不做，离开此事件
+    }
+
+    
+    @Override
+    public void update() {
+        super.update();
+        if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
+            for (AbstractCard card : AbstractDungeon.gridSelectScreen.selectedCards) {
+                AbstractDungeon.topLevelEffects.add(new PurgeCardEffect(card, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
+                AbstractDungeon.player.masterDeck.removeCard(card);
+            }
+            AbstractDungeon.gridSelectScreen.selectedCards.clear();
+        }
     }
 
     @Override

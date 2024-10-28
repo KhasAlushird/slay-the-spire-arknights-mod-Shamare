@@ -25,6 +25,12 @@
           "每当拥有者受到 #y未被格挡的伤害 时，失去 #b%d 点生命值，然后移除该能力"
         ]
       },
+      "ShamareKhas:NamesisToEnemy": {
+        "NAME": "报应",
+        "DESCRIPTIONS": [ 
+          "每当拥有者受到 #y未被格挡的伤害 时，失去 #b%d 点生命值，然后移除该能力"
+        ]
+      },
 
       
       "ShamareKhas:Pardon": {

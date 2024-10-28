@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.OfferingEffect;
 
@@ -19,6 +20,7 @@ import basemod.abstracts.CustomCard;
 import shamaremod.helpers.IdHelper;
 import shamaremod.helpers.ImageHelper;
 import shamaremod.powers.Namesis;
+import shamaremod.powers.NamesisToEnemy;
 
 public class FallenBlood extends CustomCard {
 
@@ -63,7 +65,11 @@ public class FallenBlood extends CustomCard {
         // 对一个随机敌人施加 12 点namesis
         AbstractMonster randomMonster = AbstractDungeon.getMonsters().getRandomMonster(true);
         if (randomMonster != null) {
-            addToBot(new ApplyPowerAction(randomMonster, p, new Namesis(randomMonster, 12), 12));
+            addToBot(new ApplyPowerAction(randomMonster, p, new NamesisToEnemy(randomMonster, 12), 12));
+            if(randomMonster.hasPower(NamesisToEnemy.POWER_ID)){
+                AbstractPower power = randomMonster.getPower(NamesisToEnemy.POWER_ID);
+                ((NamesisToEnemy) power).settings_when_applyed();
+            }
         }
         // 将 2 张 FallenBlood 置入弃牌堆
         addToBot(new MakeTempCardInDiscardAction(new FallenBlood(), 2));

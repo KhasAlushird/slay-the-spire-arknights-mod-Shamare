@@ -27,22 +27,22 @@
       },
       "ShamareKhas:PoisonDisaster": { 
         "NAME": "猛毒灾祸", 
-        "DESCRIPTION": "不能被打出, 虚无 NL 抽到时，随机对一名敌人给予 !M! 层 中毒 ，并使本场战斗中的 *猛毒灾祸 数值+1", 
+        "DESCRIPTION": "不能被打出, 虚无 NL 抽到时，随机对一名敌人给予 !M! 层 中毒 NL shamarekhas:灾祸增生 (1)", 
         "UPGRADE_DESCRIPTION": "不能被打出 NL *虚无 NL 回合结束时，随机对一名敌人给予 !M! 层 中毒 ，并使本场战斗中的 *猛毒灾祸 增强。" 
       },
       "ShamareKhas:FireDisaster": { 
         "NAME": "烈焰灾祸", 
-        "DESCRIPTION": "不能被打出, 虚无 NL 抽到时，对所有敌人造成 !M! 点伤害，并使本场战斗中的 *烈焰灾祸 数值+6", 
+        "DESCRIPTION": "不能被打出, 虚无 NL 抽到时，对所有敌人造成 !M! 点伤害 NL shamarekhas:灾祸增生 (6)", 
         "UPGRADE_DESCRIPTION": "不能被打出 NL *虚无 NL 回合结束时，随机对一名敌人给予 !M! 层 中毒 ，并使本场战斗中的 *猛毒灾祸 增强。" 
       },
       "ShamareKhas:ShadowDisaster": { 
         "NAME": "邪影灾祸", 
-        "DESCRIPTION": "不能被打出, 虚无 NL 抽到时，随机让一名有攻击意图的敌人在本回合内失去 !M! 点力量，并使本场战斗中的 *虚影灾祸 数值+3", 
+        "DESCRIPTION": "不能被打出, 虚无 NL 抽到时，随机使一名有攻击意图的敌人在本回合内失去 !M! 点力量, shamarekhas:灾祸增生 (3)", 
         "UPGRADE_DESCRIPTION": "不能被打出 NL *虚无 NL 回合结束时，随机对一名敌人给予 !M! 层 中毒 ，并使本场战斗中的 *猛毒灾祸 增强。" 
       },
       "ShamareKhas:HolyDisaster": { 
         "NAME": "神圣灾祸", 
-        "DESCRIPTION": "不能被打出, 虚无 NL 抽到时，抽 !M! 张牌，获得 !M! 层再生，将 *每种灾祸 置入你的弃牌堆，并使本场战斗中的 *神圣灾祸 数值+1", 
+        "DESCRIPTION": "不能被打出, 虚无 NL 抽到时，抽 !M! 张牌，获得 !M! 层 再生 ，将每种 shamarekhas:灾祸 置入你的弃牌堆, shamarekhas:灾祸增生 (1)", 
         "UPGRADE_DESCRIPTION": "不能被打出 NL *虚无 NL 回合结束时，随机对一名敌人给予 !M! 层 中毒 ，并使本场战斗中的 *猛毒灾祸 增强。" 
       },
       "ShamareKhas:PoisonSeed": { 
@@ -159,8 +159,8 @@
       },
       "ShamareKhas:CalamityGrasp": { 
         "NAME": "灾难之握", 
-        "DESCRIPTION": "对自身施加 !M! 层 shamarekhas:报应 。每当你抽到一张 *灾祸 牌时，抽1张牌。", 
-        "UPGRADE_DESCRIPTION": "对自身施加 !M! 层 shamarekhas:报应 。每当你抽到一张 *灾祸 牌时，抽1张牌。"
+        "DESCRIPTION": "对自身施加 !M! 层 shamarekhas:报应 。每当你抽到一张 shamarekhas:灾祸 牌时，抽1张牌。", 
+        "UPGRADE_DESCRIPTION": "对自身施加 !M! 层 shamarekhas:报应 。每当你抽到一张 shamarekhas:灾祸 牌时，抽1张牌。"
       },
 
       "ShamareKhas:BlackBile": { 
@@ -185,8 +185,8 @@
       },
       "ShamareKhas:IncurableDisease": { 
         "NAME": "病入膏肓", 
-        "DESCRIPTION": " 虚无 NL 选择1张 *灾祸 牌，将其2张复制加入你的抽牌堆顶部，抽 !M! 张牌 NL 消耗 ", 
-        "UPGRADE_DESCRIPTION": "选择1张 *灾祸 牌，将其2张复制加入你的抽牌堆顶部，抽 !M! 张牌 NL 消耗 "
+        "DESCRIPTION": " 虚无 ,选择1张 shamarekhas:灾祸 牌( shamarekhas:神圣灾祸 除外)，将2张复制置入你的抽牌堆顶部，抽 !M! 张牌, 消耗 ", 
+        "UPGRADE_DESCRIPTION": "选择1张 shamarekhas:灾祸 牌( shamarekhas:神圣灾祸 除外)，将2张复制置入你的抽牌堆顶部，抽 !M! 张牌, 消耗 "
       },
       "ShamareKhas:SuperNatural": { 
         "NAME": "超自然", 
@@ -245,13 +245,13 @@
       },
       "ShamareKhas:SuspiciousApple": { 
         "NAME": "可疑的苹果", 
-        "DESCRIPTION": " 虚无 , 消耗 NL 为一个目标恢复 !M! 生命值，对其施加 1 层 易伤 ，回合结束时对自己施加相同效果", 
-        "UPGRADE_DESCRIPTION": " 虚无 , 消耗 NL 为一个目标恢复 !M! 生命值，对其施加 1 层 易伤 ，回合结束时对自己施加相同效果"
+        "DESCRIPTION": " 虚无 , 消耗 NL 为一个目标恢复 !M! 生命值，对其施加 1 层 易伤 ，触发 虚无 时对自己施加相同效果", 
+        "UPGRADE_DESCRIPTION": " 虚无 , 消耗 NL 为一个目标恢复 !M! 生命值，对其施加 1 层 易伤 ，触发 虚无 时对自己施加相同效果"
       },
       "ShamareKhas:EdgeRunner": { 
         "NAME": "边缘行者", 
         "DESCRIPTION": "每回合结束时，将一张 shamarekhas:堕落之血 置入你的弃牌堆", 
-        "UPGRADE_DESCRIPTION": " 保留 NL 每回合结束时，将一张 shamarekhas:堕落之血 置入你的弃牌堆"
+        "UPGRADE_DESCRIPTION": "每回合结束时，将一张 shamarekhas:堕落之血 置入你的弃牌堆"
       },
       "ShamareKhas:PoisonBarrier": { 
         "NAME": "淬毒屏障", 
@@ -270,8 +270,8 @@
       },
       "ShamareKhas:ThoughtSteal": { 
         "NAME": "思维窃取", 
-        "DESCRIPTION": "选择一个敌人，根据它的意图选择 shamarekhas:最优的效果 ", 
-        "UPGRADE_DESCRIPTION": "选择一个敌人，根据它的意图选择 shamarekhas:最优的效果 "
+        "DESCRIPTION": "选择一个敌人，根据它的意图选择 shamarekhas:最优的效果 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "选择一个敌人，根据它的意图选择 shamarekhas:最优的效果 NL 消耗 "
       },
       "ShamareKhas:ForbiddenWords": { 
         "NAME": "禁忌咒文", 
@@ -310,8 +310,8 @@
       },
       "ShamareKhas:TheFool": { 
         "NAME": "愚者", 
-        "DESCRIPTION": "每回合开始时，最多弃掉2张牌，每弃掉1张 *灾祸 牌，获得 [E] 并抽2张牌", 
-        "UPGRADE_DESCRIPTION": "每回合开始时，最多弃掉2张牌，每弃掉1张 *灾祸 牌，获得 [E] 并抽2张牌"
+        "DESCRIPTION": "每回合开始时，最多弃掉2张牌，每弃掉1张 shamarekhas:灾祸 牌，获得 [E] 并抽2张牌", 
+        "UPGRADE_DESCRIPTION": "每回合开始时，最多弃掉2张牌，每弃掉1张 shamarekhas:灾祸 牌，获得 [E] 并抽2张牌"
       },
       "ShamareKhas:WitchBrew": { 
         "NAME": "女巫佳酿", 
@@ -335,13 +335,13 @@
       },
       "ShamareKhas:ConcentratedSulfuricAcid": { 
         "NAME": "浓硫酸", 
-        "DESCRIPTION": "去除一名敌人的所有 格挡 值及其 人工制品 NL 消耗 ", 
-        "UPGRADE_DESCRIPTION": "去除一名敌人的所有 格挡 值及其 人工制品 NL 消耗 "
+        "DESCRIPTION": "去除一名敌人的所有 格挡 值及其 人工制品 ,施加 !M! 层 易伤 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "去除一名敌人的所有 格挡 值及其 人工制品,施加 !M! 层 易伤 NL 消耗 "
       },
       "ShamareKhas:SerialDisaster": { 
         "NAME": "连环灾难", 
-        "DESCRIPTION": "对所有敌人造成 !D! 点伤害2次。每造成1次 *未被格挡的伤害 ，将一张 *灾祸 牌 置入你的弃牌堆, 消耗 ", 
-        "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害2次。每造成1次 *未被格挡的伤害 ，将一张 *灾祸 牌 置入你的弃牌堆, 消耗 "
+        "DESCRIPTION": "对所有敌人造成 !D! 点伤害2次。每造成1次 *未被格挡的伤害 ，将一张 shamarekhas:灾祸 牌 置入你的弃牌堆, 消耗 ", 
+        "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害2次。每造成1次 *未被格挡的伤害 ，将一张 shamarekhas:灾祸 牌 置入你的弃牌堆, 消耗 "
       },
       "ShamareKhas:BlazeFurnace": { 
         "NAME": "火光洪炉", 
@@ -362,7 +362,7 @@
         "NAME": "折磨疗法", 
         "DESCRIPTION": " 虚无 NL 获得 !M! 点 shamarekhas:报应 ，恢复7点生命值， shamarekhas:绝望之触 (20):额外触发2次效果, 消耗 ", 
         "UPGRADE_DESCRIPTION": " 虚无 NL 获得 !M! 点 shamarekhas:报应 ，恢复7点生命值, shamarekhas:绝望之触 (20):额外触发2次效果, 消耗 "
-      },
+      }, 
       "ShamareKhas:AmuletOfUndying": { 
         "NAME": "不朽护符", 
         "DESCRIPTION": "获得 !B! 点格挡， shamarekhas:绝望之触 (30):额外获得2点 shamarekhas:缓冲 NL 消耗 ", 
@@ -370,8 +370,8 @@
       },
       "ShamareKhas:DoomsdayProphecy": { 
         "NAME": "末日预言", 
-        "DESCRIPTION": "获得 [E] , shamarekhas:绝望之触 (50):随机将3张 *灾祸 牌 置入你的抽牌堆, 消耗 ", 
-        "UPGRADE_DESCRIPTION": "获得 [E] ,抽1张牌, shamarekhas:绝望之触 (50):随机将3张 *灾祸 牌 置入你的抽牌堆, 消耗 "
+        "DESCRIPTION": "获得 [E] , shamarekhas:绝望之触 (50):随机将3张 shamarekhas:灾祸 牌( shamarekhas:神圣灾祸 除外)置入你的抽牌堆, 消耗 ", 
+        "UPGRADE_DESCRIPTION": "获得 [E] ,抽1张牌, shamarekhas:绝望之触 (50):随机将3张 shamarekhas:灾祸 牌( shamarekhas:神圣灾祸 除外)置入你的抽牌堆, 消耗 "
       },
       "ShamareKhas:Whisper": { 
         "NAME": "低语", 
@@ -380,8 +380,8 @@
       },
       "ShamareKhas:Dressmaker": { 
         "NAME": "裁缝", 
-        "DESCRIPTION": "造成 !D! 点伤害4次。 shamarekhas:绝望之触 (45):你的下 !M! 张攻击牌耗能为0 NL 消耗 ", 
-        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害4次。 shamarekhas:绝望之触 (45):你的下 !M! 张攻击牌耗能为0 NL 消耗 "
+        "DESCRIPTION": "造成 !D! 点伤害4次。 shamarekhas:绝望之触 (60):你的下 !M! 张攻击牌耗能为0 NL 消耗 ", 
+        "UPGRADE_DESCRIPTION": "造成 !D! 点伤害4次。 shamarekhas:绝望之触 (60):你的下 !M! 张攻击牌耗能为0 NL 消耗 "
       },
       "ShamareKhas:SorceryStrike": { 
         "NAME": "巫术打击", 

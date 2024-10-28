@@ -1,6 +1,7 @@
 package shamaremod.cards.skill;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveAllBlockAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -9,6 +10,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
 
 import basemod.abstracts.CustomCard;
 import shamaremod.character.Shamare;
@@ -32,6 +34,7 @@ public class ConcentratedSulfuricAcid extends CustomCard {
         // 为了命名规范修改了变量名。这些参数具体的作用见下方
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
+        this.magicNumber = this.baseMagicNumber = 2;
     }
 
     @Override
@@ -51,6 +54,7 @@ public class ConcentratedSulfuricAcid extends CustomCard {
          if(m.hasPower("Artifact")){
              addToTop((AbstractGameAction)new RemoveSpecificPowerAction(m, p, "Artifact"));
          }
+          addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, this.magicNumber, false), this.magicNumber));
     }
 
      public AbstractCard makeCopy() {

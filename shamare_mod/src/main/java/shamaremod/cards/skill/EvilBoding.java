@@ -6,12 +6,13 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import basemod.abstracts.CustomCard;
 import shamaremod.character.Shamare;
 import shamaremod.helpers.IdHelper;
 import shamaremod.helpers.ImageHelper;
-import shamaremod.powers.Namesis;
+import shamaremod.powers.NamesisToEnemy;
 
 public class EvilBoding extends CustomCard {
 
@@ -50,7 +51,11 @@ public class EvilBoding extends CustomCard {
             namesis_to_add = p.getPower("ShamareKhas:Namesis").amount;
 
               //add Namesis
-            addToBot(new ApplyPowerAction(m, m, new Namesis(m, namesis_to_add)));
+            addToBot(new ApplyPowerAction(m, m, new NamesisToEnemy(m, namesis_to_add)));
+            if(m.hasPower(NamesisToEnemy.POWER_ID)){
+                AbstractPower power = m.getPower(NamesisToEnemy.POWER_ID);
+                ((NamesisToEnemy) power).settings_when_applyed();
+            }
         }
     }
 

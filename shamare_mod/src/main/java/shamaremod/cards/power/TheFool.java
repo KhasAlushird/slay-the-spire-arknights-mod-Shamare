@@ -48,7 +48,7 @@ public class TheFool extends CustomCard {
             addToBot(new ApplyPowerAction(p, p, new TheFoolPower(p, 2), 2));
         }
         else{
-            p.getPower(TheFoolPower.POWER_ID).stackPower(1);
+            p.getPower(TheFoolPower.POWER_ID).stackPower(2);
         }
       
     }

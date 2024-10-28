@@ -2,6 +2,8 @@ package shamaremod.powers;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
@@ -54,5 +56,13 @@ public class PeacefulPsyche extends AbstractPower {
          addToBot(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, this.amount*2), this.amount*2));
         // 获得2点能量
         addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, this.amount*2), this.amount*2));
+    }
+
+    public void onNamesisTriggered_by_hand() {
+        AbstractCreature p = this.owner;
+
+        this.addToBot(new GainEnergyAction(this.amount*2));
+        addToBot(new DrawCardAction(p,  this.amount*2));
+
     }
 }

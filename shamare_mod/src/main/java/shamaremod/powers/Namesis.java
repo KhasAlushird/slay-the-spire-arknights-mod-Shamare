@@ -110,17 +110,16 @@ public class Namesis extends AbstractPower {
     @Override
     public void wasHPLost(DamageInfo info, int damageAmount) {
         if(!this.owner.hasPower("ShamareKhas:Pardon")){
-
-            this.notifyDynamicCostCards_whenRemoved();
             //if has pardon , won't be triggered
-            if (info.owner != null && info.owner != this.owner && damageAmount> 0 &&info.type!=DamageType.THORNS) {
+            if (info.owner != null && info.owner != this.owner && damageAmount> 0 &&info.type!=DamageType.THORNS&&info.type!=DamageType.HP_LOSS) {
                 if(!this.has_triggered_this_turn1){
                     addToBot(new LoseHPAction(this.owner, this.owner, this.amount));
                     this.has_triggered_this_turn1 = true;
                     addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+                    this.notifyDynamicCostCards_whenRemoved();
                 }
 
-            }
+            
 
              // 检查是否有PeacefulPsyche
              if (this.owner.hasPower("ShamareKhas:PeacefulPsyche")) {
@@ -133,6 +132,7 @@ public class Namesis extends AbstractPower {
                   
                 }
             }
+        }
 
         }
         
@@ -142,7 +142,6 @@ public class Namesis extends AbstractPower {
          //if has pardon , won't be triggered
         if(!this.owner.hasPower("ShamareKhas:Pardon")){
             this.notifyDynamicCostCards_whenRemoved();
-           
             addToBot(new LoseHPAction(this.owner, this.owner, this.amount));
             addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
                 
@@ -150,7 +149,7 @@ public class Namesis extends AbstractPower {
              if (this.owner.hasPower("ShamareKhas:PeacefulPsyche")) {
                 AbstractPower peacefulPsyche = this.owner.getPower("ShamareKhas:PeacefulPsyche");
                 if (peacefulPsyche instanceof PeacefulPsyche) {
-                    ((PeacefulPsyche) peacefulPsyche).onNamesisTriggered();
+                    ((PeacefulPsyche) peacefulPsyche).onNamesisTriggered_by_hand();
                 }
             }
 

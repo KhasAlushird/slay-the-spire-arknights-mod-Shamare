@@ -189,8 +189,8 @@
     },
     "ShamareKhas:Dressmaker": { 
       "NAME": "Dressmaker", 
-      "DESCRIPTION": "Deal !D! damage 4 times. shamarekhas:DespairTouch (45): Your next !M! Attack cards cost 0 NL Exhaust", 
-      "UPGRADE_DESCRIPTION": "Deal !D! damage 4 times. shamarekhas:DespairTouch (45): Your next !M! Attack cards cost 0 NL Exhaust"
+      "DESCRIPTION": "Deal !D! damage 4 times. shamarekhas:DespairTouch (60): Your next !M! Attack cards cost 0 NL Exhaust", 
+      "UPGRADE_DESCRIPTION": "Deal !D! damage 4 times. shamarekhas:DespairTouch (60): Your next !M! Attack cards cost 0 NL Exhaust"
   },
   "ShamareKhas:SorceryStrike": { 
       "NAME": "Sorcery Strike", 
@@ -209,8 +209,8 @@
   },
   "ShamareKhas:ConcentratedSulfuricAcid": { 
     "NAME": "Concentrated Sulfuric Acid", 
-    "DESCRIPTION": "Remove all Block and Artifact from an enemy NL Exhaust", 
-    "UPGRADE_DESCRIPTION": "Remove all Block and Artifact from an enemy NL Exhaust"
+    "DESCRIPTION": "Remove all Block and Artifact from an enemy,apply !M! Vulnerable NL Exhaust", 
+    "UPGRADE_DESCRIPTION": "Remove all Block and Artifact from an enemy,apply !M! Vulnerable NL Exhaust"
 },
 "ShamareKhas:DepartedEcho": { 
         "NAME": "Departed Echo", 
@@ -274,8 +274,8 @@
     },
     "ShamareKhas:ThoughtSteal": { 
         "NAME": "Thought Steal", 
-        "DESCRIPTION": "Choose an enemy, select the shamarekhas:OptimalEffect based on its intent", 
-        "UPGRADE_DESCRIPTION": "Choose an enemy, select the shamarekhas:OptimalEffect based on its intent"
+        "DESCRIPTION": "Choose an enemy, select the shamarekhas:OptimalEffect based on its intent NL Exhaust ", 
+        "UPGRADE_DESCRIPTION": "Choose an enemy, select the shamarekhas:OptimalEffect based on its intent NL Exhaust "
     },
     "ShamareKhas:ForbiddenWords": { 
         "NAME": "Forbidden Words", 
@@ -294,13 +294,13 @@
   },
   "ShamareKhas:SuspiciousApple": { 
         "NAME": "Suspicious Apple", 
-        "DESCRIPTION": "Ethereal, Exhaust NL Heal a target for !M! HP, apply 1 Vulnerable to it, at the end of the turn apply the same effect to yourself", 
-        "UPGRADE_DESCRIPTION": "Ethereal, Exhaust NL Heal a target for !M! HP, apply 1 Vulnerable to it, at the end of the turn apply the same effect to yourself"
+        "DESCRIPTION": "Ethereal, Exhaust NL Heal a target for !M! HP, apply 1 Vulnerable to it,apply the same effect to yourself when triggering Ethereal ", 
+        "UPGRADE_DESCRIPTION": "Ethereal, Exhaust NL Heal a target for !M! HP, apply 1 Vulnerable to it,apply the same effect to yourself when triggering Ethereal "
     },
     "ShamareKhas:EdgeRunner": { 
         "NAME": "Edge Runner", 
         "DESCRIPTION": "At the end of each turn, add 1 shamarekhas:CorruptedBlood to your discard pile", 
-        "UPGRADE_DESCRIPTION": "Retain NL At the end of each turn, add 1 shamarekhas:CorruptedBlood to your discard pile"
+        "UPGRADE_DESCRIPTION": "At the end of each turn, add 1 shamarekhas:CorruptedBlood to your discard pile"
     },
     "ShamareKhas:OmenOfDefeat": { 
         "NAME": "Omen of Defeat", 
@@ -330,7 +330,7 @@
 "ShamareKhas:Betrayal": { 
     "NAME": "Betrayal", 
     "DESCRIPTION": "Choose an enemy, deal damage to all enemies equal to its attack power", 
-    "UPGRADE_DESCRIPTION": "Choose an enemy, deal damage to all enemies equal to its attack power"
+    "UPGRADE_DESCRIPTION": "Choose an enemy, deal damage to all enemies equal to its attack power+ !M! "
 },
 "ShamareKhas:Whisper": { 
         "NAME": "Whisper", 

@@ -38,7 +38,7 @@
         "NAME": "Greed Coin",
         "FLAVOR": "A coin that shines with a tempting luster, seemingly whispering to you to pursue more wealth and power.",
         "DESCRIPTIONS": [
-            "Whenever you #yExhaust a card, gain 1 additional gold at the end of combat."
+            "Whenever you #yExhaust a card, gain 1.5 additional gold at the end of combat(floor)."
         ]
     },
     "ShamareKhas:SirenKiss": {

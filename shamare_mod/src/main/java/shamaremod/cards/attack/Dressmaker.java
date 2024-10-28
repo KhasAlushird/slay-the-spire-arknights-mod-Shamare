@@ -55,15 +55,15 @@ public class Dressmaker extends CustomCard {
         }
         
         
-        // 如果玩家当前生命值小于最大生命值的 45%，则施加两层 FreeAttackPower
-        if (p.currentHealth < p.maxHealth * 0.45) {
+        // 如果玩家当前生命值小于最大生命值的 60%，则施加两层 FreeAttackPower
+        if (p.currentHealth < p.maxHealth * 0.60) {
             this.addToBot(new ApplyPowerAction(p, p, new FreeAttackPower(p, this.magicNumber), this.magicNumber));
         }
     }
 
     @Override
     public void triggerOnGlowCheck() {
-        if (AbstractDungeon.player.currentHealth < AbstractDungeon.player.maxHealth * 0.45) {
+        if (AbstractDungeon.player.currentHealth < AbstractDungeon.player.maxHealth * 0.60) {
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
         } else {
             this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();

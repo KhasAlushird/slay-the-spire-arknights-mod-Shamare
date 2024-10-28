@@ -34,7 +34,7 @@ public class SuperNatural extends CustomCard {
     public SuperNatural() {
         // 为了命名规范修改了变量名。这些参数具体的作用见下方
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 8;
+        this.baseDamage = 10;
         this.magicNumber=this.baseMagicNumber=2;
     }
 
@@ -42,7 +42,7 @@ public class SuperNatural extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(3);
+            this.upgradeDamage(4);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

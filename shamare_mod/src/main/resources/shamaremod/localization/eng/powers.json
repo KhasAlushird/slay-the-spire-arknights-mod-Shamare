@@ -23,6 +23,12 @@
             "Whenever the owner takes #yUnblockedDamage, lose #b%d HP, then remove this power."
         ]
     },
+    "ShamareKhas:NamesisToEnemy": {
+        "NAME": "Namesis",
+        "DESCRIPTIONS": [
+            "Whenever the owner takes #yUnblockedDamage, lose #b%d HP, then remove this power."
+        ]
+    },
     "ShamareKhas:Pardon": {
         "NAME": "Pardon",
         "DESCRIPTIONS": [

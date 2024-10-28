@@ -20,6 +20,8 @@ public class GreedCoin extends CustomRelic {
     // 点击音效
     private static final LandingSound LANDING_SOUND = LandingSound.CLINK;
 
+    private float coin_bonus = 0;
+
     public GreedCoin() {
         super(ID, ImageMaster.loadImage(IMG_PATH), RELIC_TIER, LANDING_SOUND);
     }
@@ -31,8 +33,17 @@ public class GreedCoin extends CustomRelic {
 
     public void onExhaust(AbstractCard card) {
         flash();
-        AbstractDungeon.getCurrRoom().rewards.add(new RewardItem(1));
-  }
+        this.coin_bonus += 1.5;
+    }
+    // 在战斗结束时施加奖励
+    @Override
+    public void onVictory() {
+        if (coin_bonus > 0) {
+            int finalBonus = (int) Math.floor(coin_bonus);
+            AbstractDungeon.getCurrRoom().rewards.add(new RewardItem(finalBonus));
+            coin_bonus = 0; // 重置 coin_bonus
+        }
+    }
   
 
     public AbstractRelic makeCopy() {

@@ -9,12 +9,13 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import basemod.abstracts.CustomCard;
 import shamaremod.character.Shamare;
 import shamaremod.helpers.IdHelper;
 import shamaremod.helpers.ImageHelper;
-import shamaremod.powers.Namesis;
+import shamaremod.powers.NamesisToEnemy;
 
 public class Surgery extends CustomCard {
 
@@ -32,7 +33,7 @@ public class Surgery extends CustomCard {
     public Surgery() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 1;
-        this.magicNumber = this.baseMagicNumber = 11;
+        this.magicNumber = this.baseMagicNumber = 12;
     }
 
     @Override
@@ -49,7 +50,16 @@ public class Surgery extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         if (m.currentHealth > 0 && m.currentBlock < this.damage) {
-            this.addToBot(new ApplyPowerAction(m, p, new Namesis(m, this.magicNumber), this.magicNumber));
+            if (m.hasPower(NamesisToEnemy.POWER_ID)) {
+                AbstractPower power = m.getPower(NamesisToEnemy.POWER_ID);
+                ((NamesisToEnemy) power).trigger_by_hand();
+            }
+
+            this.addToBot(new ApplyPowerAction(m, p, new NamesisToEnemy(m, this.magicNumber), this.magicNumber));
+            if(m.hasPower(NamesisToEnemy.POWER_ID)){
+                AbstractPower power = m.getPower(NamesisToEnemy.POWER_ID);
+                ((NamesisToEnemy) power).settings_when_applyed();
+            }
         }
     }
 

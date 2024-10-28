@@ -30,14 +30,14 @@ public class DarkAffine extends CustomCard {
 
     public DarkAffine() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 18;
+        this.baseBlock = 16;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBlock(5);
+            this.upgradeBlock(4);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
