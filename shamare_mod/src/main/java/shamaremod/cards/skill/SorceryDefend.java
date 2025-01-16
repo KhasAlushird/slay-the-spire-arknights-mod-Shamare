@@ -26,7 +26,7 @@ public class SorceryDefend extends CustomCard {
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR =  AbstractCard.CardColor.COLORLESS;
     private static final CardRarity RARITY = CardRarity.BASIC;
-    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
 
     public SorceryDefend() {
         // 为了命名规范修改了变量名。这些参数具体的作用见下方
