@@ -12,7 +12,6 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.OfferingEffect;
 
@@ -31,7 +30,7 @@ public class FallenBlood extends CustomCard {
     private static final int COST = -2;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.CURSE;
-    private static final CardColor COLOR =  AbstractCard.CardColor.CURSE;
+    private static final CardColor COLOR = AbstractCard.CardColor.CURSE;
     private static final CardRarity RARITY = CardRarity.CURSE;
     private static final CardTarget TARGET = CardTarget.SELF;
 
@@ -45,18 +44,19 @@ public class FallenBlood extends CustomCard {
     public void upgrade() {
     }
 
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-  }
-  
-  public void triggerWhenDrawn() {
+    }
 
-     //VFXAction 
+    @Override
+    public void triggerWhenDrawn() {
+
+        //VFXAction
         if (Settings.FAST_MODE) {
-            addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new OfferingEffect(), 0.1F));
-        } 
-        else {
-            addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new OfferingEffect(), 0.5F));
-        } 
+            addToBot((AbstractGameAction) new VFXAction((AbstractGameEffect) new OfferingEffect(), 0.1F));
+        } else {
+            addToBot((AbstractGameAction) new VFXAction((AbstractGameEffect) new OfferingEffect(), 0.5F));
+        }
         AbstractPlayer p = AbstractDungeon.player;
         // 抽一张牌
         addToBot(new DrawCardAction(p, 1));
@@ -66,24 +66,14 @@ public class FallenBlood extends CustomCard {
         AbstractMonster randomMonster = AbstractDungeon.getMonsters().getRandomMonster(true);
         if (randomMonster != null) {
             addToBot(new ApplyPowerAction(randomMonster, p, new NamesisToEnemy(randomMonster, 12), 12));
-            if(randomMonster.hasPower(NamesisToEnemy.POWER_ID)){
-                AbstractPower power = randomMonster.getPower(NamesisToEnemy.POWER_ID);
-                ((NamesisToEnemy) power).settings_when_applyed();
-            }
         }
         // 将 2 张 FallenBlood 置入弃牌堆
         addToBot(new MakeTempCardInDiscardAction(new FallenBlood(), 2));
-  }
+    }
 
-   
+    @Override
+    public AbstractCard makeCopy() {
+        return new FallenBlood();
+    }
 
-     public AbstractCard makeCopy() {
-      return new FallenBlood();
-   }
-
-    
 }
-
-
-
-

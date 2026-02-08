@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import basemod.abstracts.CustomCard;
 import shamaremod.character.Shamare;
@@ -52,34 +51,24 @@ public class EvilBoding extends CustomCard {
 
               //add Namesis
             addToBot(new ApplyPowerAction(m, m, new NamesisToEnemy(m, namesis_to_add)));
-            if(m.hasPower(NamesisToEnemy.POWER_ID)){
-                AbstractPower power = m.getPower(NamesisToEnemy.POWER_ID);
-                ((NamesisToEnemy) power).settings_when_applyed();
-            }
         }
     }
 
-       
+
     @Override
     public void triggerOnGlowCheck() {
-        boolean glow = false;
         AbstractPlayer p = com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
-        if (p.hasPower("ShamareKhas:Namesis")){
-            glow = true;
-        }
-        else{
-            glow = false;
-        }
-        if (glow) {
+        if (p.hasPower("ShamareKhas:Namesis")) {
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
         } else {
             this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         }
     }
 
-     public AbstractCard makeCopy() {
-      return new EvilBoding();
-   }
+    @Override
+    public AbstractCard makeCopy() {
+        return new EvilBoding();
+    }
 
-    
+
 }

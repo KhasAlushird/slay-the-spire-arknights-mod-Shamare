@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="main"  >
 <target name="main">
-  <copy file="target/Operator_Shamare.jar" tofile="D:/steam1/steamapps/common/SlayTheSpire/mods/Operator_Shamare.jar"/>
+  <copy file="target/Operator_Shamare.jar" tofile="D:/App/Steam/steamapps/common/SlayTheSpire/mods/Operator_Shamare.jar"/>
 </target>
 </project>

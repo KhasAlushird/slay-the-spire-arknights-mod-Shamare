@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <!-- 改成你需要的名称 -->
@@ -24,7 +24,7 @@
         <!-- *****一定要改 ***** -->
         <!-- 改成你的steam安装路径位置，指向steamapps文件夹（该目录安装了杀戮尖塔及mod） -->
         <!-- 注意使用正斜杠（/）而不是反斜杠（\） -->
-        <Steam.path>D:/steam1/steamapps</Steam.path>
+        <Steam.path>D:/App/Steam/steamapps</Steam.path>
     </properties>
 
     <dependencies>
@@ -72,7 +72,8 @@
                         <phase>package</phase>
                         <configuration>
                             <target>
-                                <copy file="target/${project.artifactId}.jar" tofile="${Steam.path}/common/SlayTheSpire/mods/${project.artifactId}.jar"/>
+                                <copy file="target/${project.artifactId}.jar"
+                                    tofile="${Steam.path}/common/SlayTheSpire/mods/${project.artifactId}.jar" />
                             </target>
                         </configuration>
                         <goals>

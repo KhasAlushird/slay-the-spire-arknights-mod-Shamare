@@ -56,10 +56,6 @@ public class Surgery extends CustomCard {
             }
 
             this.addToBot(new ApplyPowerAction(m, p, new NamesisToEnemy(m, this.magicNumber), this.magicNumber));
-            if(m.hasPower(NamesisToEnemy.POWER_ID)){
-                AbstractPower power = m.getPower(NamesisToEnemy.POWER_ID);
-                ((NamesisToEnemy) power).settings_when_applyed();
-            }
         }
     }
 

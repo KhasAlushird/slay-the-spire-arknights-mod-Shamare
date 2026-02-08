@@ -57,7 +57,7 @@ import shamaremod.relics.SpiralHorn;
 
 
 @SpireInitializer
-public class TheCore implements EditCardsSubscriber,EditStringsSubscriber,EditCharactersSubscriber,EditRelicsSubscriber,EditKeywordsSubscriber,PostBattleSubscriber,OnStartBattleSubscriber,PostDungeonInitializeSubscriber,PostInitializeSubscriber{  
+public class TheCore implements EditCardsSubscriber,EditStringsSubscriber,EditCharactersSubscriber,EditRelicsSubscriber,EditKeywordsSubscriber,PostBattleSubscriber,OnStartBattleSubscriber,PostDungeonInitializeSubscriber,PostInitializeSubscriber{
     // 实现接口
     // 人物选择界面按钮的图片
     private static final String MY_CHARACTER_BUTTON =   ImageHelper.getOtherImgPath("character","Character_Button" );
@@ -116,7 +116,7 @@ public class TheCore implements EditCardsSubscriber,EditStringsSubscriber,EditCh
         resetMagicNumberBonuses();
     }
 
-     
+
     private void resetMagicNumberBonuses() {
         PoisonDisaster.resetMagicNumberBonus();
         FireDisaster.resetMagicNumberBonus();
@@ -220,7 +220,7 @@ public class TheCore implements EditCardsSubscriber,EditStringsSubscriber,EditCh
         basemod.BaseMod.addCard(new shamaremod.cards.curse.FallenBlood());
 
 
-        
+
     }
 
     @Override
@@ -286,7 +286,7 @@ public class TheCore implements EditCardsSubscriber,EditStringsSubscriber,EditCh
             logger.error("Failed to load localization files for language: " + lang, e);
         }
     }
-    
+
     @Override
     public void receiveEditCharacters() {
         // 向basemod注册人物
@@ -301,7 +301,7 @@ public class TheCore implements EditCardsSubscriber,EditStringsSubscriber,EditCh
         BaseMod.addEvent(BlankDoor.ID, BlankDoor.class,TheCity.ID);
     }
 
-   
+
     @Override
     public void receiveEditRelics() {
 
@@ -329,7 +329,7 @@ public class TheCore implements EditCardsSubscriber,EditStringsSubscriber,EditCh
 @Override
 public void receiveEditKeywords() {
     Gson gson = new Gson();
-    String lang = "eng"; 
+    String lang = "eng";
     if (Settings.language == Settings.GameLanguage.ZHS) {
         lang = "zhs";
     }
